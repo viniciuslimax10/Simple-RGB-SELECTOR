@@ -1,0 +1,130 @@
+h1 {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #000;
+  text-shadow: 5px 4px #fff;
+}
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-box {
+  height: 200px;
+}
+#background {
+  background: #000;
+  width: 420px;
+  border-radius: 2%;
+  padding: 50px;
+  margin-top: 300px;
+}
+#conteudo {
+  margin-top: 200px;
+  background-color: #ececec;
+  color: black;
+  width: 520px;
+  border-radius: 2%;
+  padding: 30px;
+}
+#conteudo ul {
+  margin-top: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+#conteudo ul p {
+  margin-bottom: 10px;
+}
+
+#color1,
+#color2,
+#color3[type='range'] {
+  /*removes default webkit styles*/
+  -webkit-appearance: none;
+
+  /*fix for FF unable to apply focus style bug */
+  border: 1px solid white;
+
+  /*required for proper track sizing in FF*/
+  width: 300px;
+}
+input[type='range']::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: #000;
+  border: none;
+  border-radius: 3px;
+}
+#color1[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: red;
+  margin-top: -4px;
+}
+#color2[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: green;
+  margin-top: -4px;
+}
+#color3[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: blue;
+  margin-top: -4px;
+}
+input[type='range']:focus {
+  outline: none;
+}
+input[type='range']:focus::-webkit-slider-runnable-track {
+  background: #565656;
+}
+
+input[type='range']::-moz-range-track {
+  width: 300px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+#color1[type='range']::-moz-range-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: red;
+}
+#color2[type='range']::-moz-range-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: green;
+}
+#color3[type='range']::-moz-range-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: blue;
+}
+input[type='text'] {
+  width: 40px;
+  border-radius: 15%;
+  background-color: #fff;
+  border-color: #000;
+  text-align: center;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Colors</title>
+  </head>
+  <body>
+    <div class="flex-box container-box">
+      <div id="conteudo">
+        <h1>Mix Colors</h1>
+        <ul>
+          <li>
+            <label>(R) Red</label>
+            <p>
+              <input
+                type="range"
+                name="color1"
+                id="color1"
+                value="0"
+                min="0"
+                max="255"
+              />
+              <input type="text" name="valor1" id="valor1" value="0" readonly />
+            </p>
+          </li>
+          <li>
+            <label class="igual">(G) Green</label>
+            <p>
+              <input
+                type="range"
+                name="color2"
+                id="color2"
+                value="0"
+                min="0"
+                max="255"
+              />
+              <input type="text" name="valor2" id="valor2" value="0" readonly />
+            </p>
+          </li>
+          <li>
+            <label class="igual2">(B) Blue</label>
+            <p>
+              <input
+                type="range"
+                name="color3"
+                id="color3"
+                value="0"
+                min="0"
+                max="255"
+              />
+              <input type="text" name="valor3" id="valor3" value="0" readonly />
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex-box container-box">
+      <div id="background"></div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
